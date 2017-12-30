@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        android:text="New name : "
+        android:textSize="20dp"
+
+        />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="#ffffff"
+        android:textSize="15dp"
+        android:textColor="#76797c"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Your password : "
+        android:textSize="20dp"
+
+
+        />
+
+    <EditText
+        android:backgroundTint="#ffffff"
+        android:id="@+id/pw"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:password="true"
+        android:textSize="15dp"
+        android:textColor="#76797c"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Confirm password : "
+        android:textSize="20dp"
+
+        />
+
+    <EditText
+        android:backgroundTint="#ffffff"
+        android:id="@+id/pw2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:password="true"
+        android:textSize="15dp"
+        android:textColor="#76797c"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+
+        android:text="Number of Subjects : "
+        android:textSize="20dp" />
+        <NumberPicker
+            android:id = "@+id/np"
+            android:layout_marginLeft="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+        </NumberPicker>
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+
+            android:text="Minimum attendance % : "
+            android:textSize="20dp" />
+        <NumberPicker
+            android:id = "@+id/np2"
+            android:layout_marginLeft="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+        </NumberPicker>
+
+
+
+        </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:onClick="creater"
+        android:text="Create"
+        android:textSize="30dp"></TextView>
+
+
+    </LinearLayout>
+</ScrollView>

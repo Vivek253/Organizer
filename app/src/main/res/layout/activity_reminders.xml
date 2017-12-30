@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/x9"
+        android:tag="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--Dummy-->
+
+        <TextView
+            android:id="@+id/it"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            />
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+
+            android:text="✓ Tasks"
+            android:textSize="40dp"
+            android:textStyle="italic" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:textAlignment="viewEnd"
+                android:layout_marginRight="20dp"
+                android:textSize="40dp"
+                android:onClick="finish"
+                android:text="⏎"/>
+           <!-- <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="95dp"
+                android:text="Back"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:onClick="ret"/>-->
+            </LinearLayout>
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--------------------------------------" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp">
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="add"
+                android:text="ADD" />
+
+
+            <EditText
+                android:id="@+id/t1"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="90dp">
+
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="7dp"
+
+                android:orientation="horizontal">
+                <RadioButton
+                    android:text = "All"
+                    android:id="@+id/rb1"
+                    android:clickable="true"
+
+                    android:layout_height="0dp"
+                    android:layout_width="0dp"
+                    android:buttonTint="#ffffff"
+
+                    />
+
+
+                <RadioButton
+                    android:id="@+id/rb2"
+                    android:checked="true"
+                    android:textSize="6dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="ct"
+                    android:buttonTint="#f44141" />
+
+                <RadioButton
+                    android:textSize="6dp"
+                    android:onClick="ct"
+                    android:id="@+id/rb3"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="#f4c242"/>
+
+                <!--android:checked="true"-->
+
+                <RadioButton
+                    android:textSize="6dp"
+                    android:id="@+id/rb4"
+                    android:onClick="ct"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="#23af0e" />
+
+                <RadioButton
+                    android:textSize="6dp"
+                    android:id="@+id/rb5"
+                    android:onClick="ct"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="#42b9f4" />
+
+                <RadioButton
+                    android:textSize="6dp"
+                    android:id="@+id/rb6"
+                    android:onClick="ct"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="#ea7ca2" />
+
+                <RadioButton
+                    android:textSize="6dp"
+                    android:id="@+id/rb7"
+                    android:onClick="ct"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="#f48835" />
+
+            </RadioGroup>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/x1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
